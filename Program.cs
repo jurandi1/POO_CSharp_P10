@@ -1,10 +1,32 @@
-﻿namespace POO_CSharp_P10
+﻿using System.Globalization;
+
+namespace POO_CSharp_P10
 {
     internal class Program
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Sintanume alternativa - switch-case");
+            Console.WriteLine("Sintaxe alternativa - expressão condicional ternária");
+
+            double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double desconto;
+            if (preco < 20)
+            {
+                desconto = preco * 0.1;
+            }
+            else
+            {
+                desconto = preco * 0.05;
+            }
+
+            Console.WriteLine(desconto);
+            //expressão condicional ternária
+            Console.WriteLine("expressão condicional ternária");
+            desconto = (preco < 20.0) ? preco * 0.1 : preco * 0.05;
+            Console.WriteLine(desconto);
+
+            Console.WriteLine();
+            Console.WriteLine("Sintaxe alternativa - switch-case");
             //exemplo com if else
             Console.WriteLine("exemplo com if else");
             int num = int.Parse(Console.ReadLine());
