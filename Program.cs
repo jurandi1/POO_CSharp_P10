@@ -4,6 +4,77 @@
     {
         private static void Main(string[] args)
         {
+            Console.WriteLine("Sintanume alternativa - switch-case");
+            //exemplo com if else
+            Console.WriteLine("exemplo com if else");
+            int num = int.Parse(Console.ReadLine());
+            string day;
+            if (num == 1)
+            {
+                day = "Sunday";
+            }
+            else if (num == 2)
+            {
+                day = "Monday";
+            }
+            else if (num == 3)
+            {
+                day = "Tuesday";
+            }
+            else if (num == 4)
+            {
+                day = "Wednesday";
+            }
+            else if (num == 5)
+            {
+                day = "Thursday";
+            }
+            else if (num == 6)
+            {
+                day = "Friday";
+            }
+            else if (num == 7)
+            {
+                day = "Saturday";
+            }
+            else
+            {
+                day = "Invalid value";
+            }
+            Console.WriteLine("Day: " + day);
+            Console.WriteLine();
+            Console.WriteLine("Exemplo com switch-case");
+            switch (num)
+            {
+                case 1:
+                    day = "Sunday";
+                    break;
+                case 2:
+                    day = "Monday";
+                    break;
+                case 3:
+                    day = "Tuesday";
+                    break;
+                case 4:
+                    day = "Wednesday";
+                    break;
+                case 5:
+                    day = "Thursday";
+                    break;
+                case 6:
+                    day = "Friday";
+                    break;
+                case 7:
+                    day = "Saturday";
+                    break;
+                default:
+                    day = "Invalid value";
+                    break;
+            }
+            Console.WriteLine("Day: " + day);
+            Console.WriteLine();
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine();
             Console.WriteLine("Inferência de tipos: palavra var");
             var x = 10;
             var y = 20.0;
