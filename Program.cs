@@ -6,6 +6,9 @@ namespace POO_CSharp_P10
     {
         private static void Main(string[] args)
         {
+            Console.WriteLine();
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine();
             Console.WriteLine("Funções interessantes para string");
 
             string original = "abcde FGHIJ ABC abc DEFG ";
@@ -34,8 +37,10 @@ namespace POO_CSharp_P10
             Console.WriteLine("IsNullOrWhiteSpace: " + b2);
 
             Console.WriteLine();
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine();
             Console.WriteLine("Sintaxe alternativa - expressão condicional ternária");
-
+            Console.Write("Insira um preço para ver o desconto: ");
             double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             double desconto;
             if (preco < 20)
@@ -54,10 +59,14 @@ namespace POO_CSharp_P10
             Console.WriteLine(desconto);
 
             Console.WriteLine();
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine();
             Console.WriteLine("Sintaxe alternativa - switch-case");
             //exemplo com if else
-            Console.WriteLine("exemplo com if else");
+            Console.Write("Insira um número de 1 á 7: ");
             int num = int.Parse(Console.ReadLine());
+            Console.WriteLine("exemplo com if else");
+            
             string day;
             if (num == 1)
             {
